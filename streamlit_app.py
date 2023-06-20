@@ -39,8 +39,6 @@ try:
     
 except URLError as err:
   streamlit.error()
-  
-streamlit.stop()
 
 streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
@@ -61,4 +59,5 @@ streamlit.write('Thanks for adding fruit: ', add_my_fruit)
 # thhis will wont work
 my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 
-
+  
+streamlit.stop()
